@@ -1,8 +1,17 @@
 # Data — lives in GCS not Git
 data/*.csv
 data/*.zip
+data/*.json
+data/*.xlsx
 data/*.gz
 data/*.parquet
+
+# Model weights — too large for GitHub
+*.pt
+*.pth
+*.bin
+*.h5
+*.pkl
 
 # GCP credentials — never commit
 *.json
@@ -34,6 +43,9 @@ venv/
 # VS Code
 .vscode/
 *.code-workspace
+
+# Colab sync
+*.ipynb_checkpoints/
 
 # Mac
 .DS_Store
